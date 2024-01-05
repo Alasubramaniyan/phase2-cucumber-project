@@ -1,0 +1,236 @@
+-------------------------------------------------------------------------------
+Test set: com.simplilearn.bddtest.testrunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 41, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 201.4 s <<< FAILURE! -- in com.simplilearn.bddtest.testrunner.TestRunner
+Add to Cart.: Search a product and add the first result/product to the User basket -- Time elapsed: 0.459 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User search for a product "Lenovo Laptop"' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User search for a product {string}")
+public void user_search_for_a_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Add the first laptop that apears in the search results to the basket")
+public void add_the_first_laptop_that_apears_in_the_search_results_to_the_basket() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on {string} link")
+public void user_clicks_on_link(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User basket should display added {int} items")
+public void user_basket_should_display_added_items(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Search products on Amazon #2.Search feature Test with multiple of products #1 -- Time elapsed: 37.76 s <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=120.0.6099.130)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d6937dd53b9cb9e3faf3ea5d29f4958, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\WIN10\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58567/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d6937dd53b9cb9e3faf3ea5d29f4958
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at com.simplilearn.bddtest.stepdefinitions.AmazonProductSearch2Steps.enter_product_search_input(AmazonProductSearch2Steps.java:45)
+	at ✽.Enter Product Search input "Iphone 15 pro max"(file:///C:/Users/WIN10/eclipse-workspace/phase2-cucumber-maven-test-27-12-2023/src/test/resource/Features/amazon-product-search2.feature:10)
+
+Search products on Amazon #2.Search feature Test with multiple of products #2 -- Time elapsed: 47.39 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [18ba90810f4f31bbc98d005411cfbf99, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\WIN10\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58638/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 18ba90810f4f31bbc98d005411cfbf99
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at com.simplilearn.bddtest.stepdefinitions.AmazonProductSearch2Steps.enter_product_search_input(AmazonProductSearch2Steps.java:45)
+	at ✽.Enter Product Search input "Apple Mac book"(file:///C:/Users/WIN10/eclipse-workspace/phase2-cucumber-maven-test-27-12-2023/src/test/resource/Features/amazon-product-search2.feature:10)
+
+Facebook Login Verification #1.Unsuccessful Verification of Login functionality -- Time elapsed: 1.194 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at com.simplilearn.bddtest.stepdefinitions.FacebookLoginSteps.i_should_be_on_the_facebook_login_page(FacebookLoginSteps.java:40)
+	at ✽.I should be on the facebook login page(file:///C:/Users/WIN10/eclipse-workspace/phase2-cucumber-maven-test-27-12-2023/src/test/resource/Features/facebook-login.feature:7)
+
+Registration.Create a New User -- Time elapsed: 0.021 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user on the hompage' and 8 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user on the hompage")
+public void user_on_the_hompage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user follows {string} button")
+public void user_follows_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user should be on the registration page")
+public void user_should_be_on_the_registration_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user fills registration {string} with {string}")
+public void user_fills_registration_with(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User is created Successfully")
+public void user_is_created_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user return back on registration page")
+public void user_return_back_on_registration_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Registration.User does not follow form validations -- Time elapsed: 0.126 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user on the hompage' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user on the hompage")
+public void user_on_the_hompage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user follows {string} button")
+public void user_follows_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user should be on the registration page")
+public void user_should_be_on_the_registration_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters wrong characters")
+public void user_enters_wrong_characters() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("error message displayed with invalid password")
+public void error_message_displayed_with_invalid_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user return back on registration page")
+public void user_return_back_on_registration_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Reset Password.Successfull Reset Password Verification -- Time elapsed: 0.030 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user should be on the logged In' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user should be on the logged In")
+public void user_should_be_on_the_logged_in() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user navigate to reset password page {string}")
+public void user_navigate_to_reset_password_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user ask to reset my password")
+public void user_ask_to_reset_my_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should review an email with:")
+public void user_should_review_an_email_with(String docString) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Reset Password.Valid Credentials for login -- Time elapsed: 0.012 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user check for "email" and "password" fields' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user check for {string} and {string} fields")
+public void user_check_for_and_fields(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Reset Password.Unsuccessful Verification of Login functionality -- Time elapsed: 0.016 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user clicks "login in" button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
